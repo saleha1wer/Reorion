@@ -272,9 +272,9 @@ if __name__ == '__main__':
     now = time.time()
     print('Graph read as: ', G, 'Time Taken:', int(now - start), 'second(s)')
     # dimension
-    d = 5
+    d = 7
 
-    k = 30
+    k = 50
     k_initial = 16
 
     #Select landmarks 
