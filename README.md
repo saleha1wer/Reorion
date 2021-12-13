@@ -31,3 +31,7 @@ Strategy is one of --> [random, degree, max_ave_distance, max_min_distance, conv
 <br />
 <br />
 This is for running on a TXT edge list. For one in CSV format, see Testing Scripts/olion_GitHub.py <br />
+<br />
+This returns a .npy file, containing a dictionary of (node, coordinates) pairs, in the same directory as the edge list. 
+<br /> <br />
+
