@@ -8,7 +8,7 @@ import itertools
 
 
 too = '/data/s3305139/olion/'
-path = 'author.txt' 
+path = 'authors.txt' 
 
 # # Read graph
 # lines = []
@@ -52,7 +52,7 @@ print('Real Diameteer: ', max_distance)
 strategies = ['random', 'degree', 'max_ave_distance', 'max_min_distance', 'convex_hull']
 
 for strategy in strategies:
-    new_dict = np.load('/Users/mrsalwer/Desktop/Uni/Leiden Uni/Year-1/SNACS/proj/cords/dogster/dogster.txt_'+strategy+'.npy', allow_pickle='TRUE')
+    new_dict = np.load('/Users/mrsalwer/Desktop/Uni/Leiden Uni/Year-1/SNACS/proj/cords/authors/authors.txt_'+strategy+'.npy', allow_pickle='TRUE')
     # slice dict keys by space
     # for every pair you slice, calc euclideaan distance and calculate relative error 
     # average relative error
