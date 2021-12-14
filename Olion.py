@@ -214,7 +214,7 @@ def plot(anchors_cords, anchors_shortest_paths, nodes_to_plot,dimension):
 
     #Make dictionary of landmarks' coordinates so that dict(landmark) return coordinates of landmark
     
-    n_cores = int(os.environ['SLURM_JOB_CPUS_PER_NODE'])
+    n_cores = int(mp.cpu_count())
     pool = mp.Pool(processes=int(n_cores))
 
     plot_one_node_fixed = partial(plot_one_node, anchors_cords= anchors_cords, anchors_shortest_paths= anchors_shortest_paths, dimension=dimension)
