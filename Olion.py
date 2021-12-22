@@ -279,11 +279,12 @@ if __name__ == '__main__':
 
     #Select landmarks 
     if len(sys.argv) < 3:
-        k_landmarks, k_landmarks_shortest_paths= select_lm(G,k,strategy='random')
+        strategy = 'random'
     else:
-        k_landmarks, k_landmarks_shortest_paths= select_lm(G,k,strategy=str(sys.argv[2]))
+        strategy=str(sys.argv[2])
         # strategies = ['random', 'degree', 'max_ave_distance', 'max_min_distance', 'convex_hull']
 
+    k_landmarks, k_landmarks_shortest_paths= select_lm(G,k,strategy=strategy)
     now1 = time.time()
 
     print(len(k_landmarks), ' Landmarks Selected', 'Time Taken:', int(now1 - now), 'second(s)') 
