@@ -315,7 +315,7 @@ if __name__ == '__main__':
 
     print('All',len(G.nodes),'nodes plotted', 'Total Time Taken For',strategy, ':', int(now4 - start), 'second(s)')
 
-    np.save('path'+'_Coordinates' + '.npy', all_cords)
+    np.save(path+'_Coordinates' + '.npy', all_cords)
 
 
 
